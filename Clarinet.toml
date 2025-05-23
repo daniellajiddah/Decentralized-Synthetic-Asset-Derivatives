@@ -1,0 +1,24 @@
+[project]
+name = 'Decentralized-Synthetic-Asset-Derivatives'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.asset-definition]
+path = 'contracts/asset-definition.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.oracle-verification]
+path = 'contracts/oracle-verification.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
